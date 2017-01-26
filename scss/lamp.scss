@@ -1,0 +1,31 @@
+$light-blue: #2D4552;
+$dark-blue: #273841;
+$dark-pink: #CD584C;
+$light-pink: #C05447;
+$dark-grey: #242424;
+$off-white: #F5F6F6;
+
+/* Legacy classes from SVG */
+.st0 { fill: $light-blue; }
+.st1 { fill: $off-white; }
+.st2 { fill: $dark-blue; }
+.st3 { fill: $dark-pink; }
+.st4 { fill: $light-pink; }
+.st5 { fill: $dark-grey; }
+
+.lamp {
+	$block: &;
+	max-width: 400px;
+	&--on {
+		#{$block}__glare {
+			opacity: .2;
+		}
+	}
+	&__glare {
+		transition: opacity .2s linear;
+		opacity: 0;
+	}
+	&__switch {
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,29 @@
+/* Legacy classes from SVG */
+.st0 {
+  fill: #2D4552; }
+
+.st1 {
+  fill: #F5F6F6; }
+
+.st2 {
+  fill: #273841; }
+
+.st3 {
+  fill: #CD584C; }
+
+.st4 {
+  fill: #C05447; }
+
+.st5 {
+  fill: #242424; }
+
+.lamp {
+  max-width: 400px; }
+  .lamp--on .lamp__glare {
+    opacity: .2; }
+  .lamp__glare {
+    -webkit-transition: opacity .2s linear;
+            transition: opacity .2s linear;
+    opacity: 0; }
+  .lamp__switch {
+    cursor: pointer; }
